@@ -12,7 +12,7 @@ import { UserButton } from "@clerk/nextjs";
 export default function MobileNavbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <div className="block border-separate bg-background">
+    <div className="block border-separate bg-background md:hidden">
       <nav className="container flex items-center justify-between px-8">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
